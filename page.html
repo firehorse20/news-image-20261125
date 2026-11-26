@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The World Today — 25 November 2026</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #fff; font-family: Georgia, 'Times New Roman', serif; color: #000; }
+  .page { width: 1024px; height: 1024px; padding: 10px 22px 10px; overflow: hidden; background: #fff; }
+
+  /* Masthead */
+  .masthead { text-align: center; border-bottom: 4px solid #000; padding-bottom: 6px; }
+  .topline { font-family: Arial, Helvetica, sans-serif; font-size: 10px; letter-spacing: 4px; color: #444; }
+  h1 { font-size: 62px; line-height: 1; letter-spacing: 1px; font-weight: 900; }
+  .dateline { font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: bold; letter-spacing: 1px; margin-top: 4px; }
+  .dateline .red { color: #b00000; }
+
+  /* UTC time bar */
+  .utcbar { display: flex; border-bottom: 2px solid #000; margin-top: 5px; padding: 4px 0 5px; font-family: Arial, Helvetica, sans-serif; }
+  .utcbar .seg { flex: 1; padding: 0 8px; border-left: 1px solid #ccc; }
+  .utcbar .seg:first-child { border-left: none; padding-left: 0; }
+  .utcbar .t { font-size: 9px; font-weight: bold; letter-spacing: 1px; color: #b00000; }
+  .utcbar .s { font-size: 10.5px; line-height: 1.25; font-weight: bold; }
+
+  /* Map */
+  .mapwrap { border-bottom: 2px solid #000; padding: 4px 0 2px; position: relative; }
+  .mapwrap svg { display: block; }
+  .maplabel { position: absolute; right: 0; top: 4px; font-family: Arial, Helvetica, sans-serif; font-size: 9px; letter-spacing: 1px; color: #444; }
+
+  /* Lead 1 */
+  .lead1 { border-bottom: 2px solid #000; padding: 7px 0 8px; text-align: center; }
+  .kicker { font-family: Arial, Helvetica, sans-serif; font-size: 10px; font-weight: bold; letter-spacing: 3px; color: #b00000; }
+  .lead1 h2 { font-size: 26px; line-height: 1.08; font-weight: 900; letter-spacing: 0.2px; }
+  .lead1 .dek { font-size: 14.5px; line-height: 1.3; margin-top: 3px; color: #111; }
+
+  /* Leads 2-3 */
+  .leads23 { display: flex; border-bottom: 2px solid #000; }
+  .leads23 article { flex: 1; padding: 7px 10px 8px 0; }
+  .leads23 article + article { border-left: 1px solid #bbb; padding-left: 10px; padding-right: 0; }
+  .leads23 h3 { font-size: 19px; line-height: 1.12; font-weight: 900; }
+  .leads23 .dek { font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.35; margin-top: 3px; color: #111; }
+
+  /* Second tier */
+  .second { display: grid; grid-template-columns: 1fr 1fr; border-bottom: 2px solid #000; }
+  .second article { padding: 5px 10px 5px 0; border-top: 1px solid #ddd; }
+  .second article:nth-child(odd) { border-right: 1px solid #bbb; padding-right: 10px; }
+  .second article:nth-child(even) { padding-left: 10px; }
+  .second article:nth-child(-n+2) { border-top: none; }
+  .second article.full { grid-column: 1 / -1; border-right: none; padding-left: 0; }
+  .second h4 { font-size: 15px; line-height: 1.15; font-weight: 900; }
+  .second .dek { font-family: Arial, Helvetica, sans-serif; font-size: 11.5px; line-height: 1.3; margin-top: 2px; color: #111; }
+
+  /* Tiles */
+  .tiles { display: grid; grid-template-columns: 1fr 1fr 1fr; column-gap: 16px; }
+  .tile { border-top: 1px solid #ddd; padding: 3px 0 2px; }
+  .tile .tag { font-family: Arial, Helvetica, sans-serif; font-size: 8.5px; font-weight: bold; letter-spacing: 1.5px; color: #b00000; }
+  .tile h5 { font-size: 13px; line-height: 1.18; font-weight: 900; }
+  .tile .dek { font-family: Arial, Helvetica, sans-serif; font-size: 10.5px; line-height: 1.3; color: #111; white-space: nowrap; }
+
+  footer { border-top: 3px solid #000; margin-top: 2px; padding-top: 4px; font-family: Arial, Helvetica, sans-serif; font-size: 9.5px; color: #444; display: flex; justify-content: space-between; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="masthead">
+    <div class="topline">WORLD NEWS &middot; ONE PAGE &middot; WEDNESDAY</div>
+    <h1>THE WORLD TODAY</h1>
+    <div class="dateline"><span class="red">WEDNESDAY, 25 NOVEMBER 2026</span> &nbsp;&middot;&nbsp; 35 STORIES &middot; 12 REGIONS</div>
+  </header>
+
+  <div class="utcbar">
+    <div class="seg"><div class="t">OVERNIGHT &middot; UTC</div><div class="s">Ukraine drones hit two Rosneft refineries</div></div>
+    <div class="seg"><div class="t">MORNING &middot; UTC</div><div class="s">Iran says two tankers mined in Hormuz</div></div>
+    <div class="seg"><div class="t">MIDDAY &middot; UTC</div><div class="s">Houthis strike Saudi refinery, Riyadh tower</div></div>
+    <div class="seg"><div class="t">AFTERNOON &middot; UTC</div><div class="s">Asia markets tumble; Kospi &minus;6.16%</div></div>
+    <div class="seg"><div class="t">EVENING &middot; UTC</div><div class="s">Dow closes above 50,000 for first time</div></div>
+  </div>
+
+  <div class="mapwrap">
+    <span class="maplabel">RED DOTS MARK THE DAY&rsquo;S NEWS</span>
+    <svg width="980" height="76" viewBox="0 0 980 92">
+      <!-- schematic continents -->
+      <g fill="#e6e6e6" stroke="#c9c9c9" stroke-width="1">
+        <path d="M40 12 L120 6 L180 14 L205 26 L185 44 L150 52 L120 44 L80 48 L45 34 Z"/>
+        <path d="M210 55 L255 52 L275 62 L260 82 L228 84 L212 68 Z"/>
+        <path d="M440 18 L500 8 L545 16 L560 30 L530 44 L480 46 L445 34 Z"/>
+        <path d="M455 50 L520 48 L545 60 L530 84 L480 86 L458 68 Z"/>
+        <path d="M575 10 L700 6 L830 12 L880 24 L860 44 L780 52 L680 50 L600 42 L575 26 Z"/>
+        <path d="M820 62 L880 58 L905 68 L880 84 L835 80 Z"/>
+      </g>
+      <!-- dots -->
+      <g fill="#b00000">
+        <circle cx="585" cy="38" r="4"/><circle cx="600" cy="46" r="4"/><circle cx="615" cy="34" r="3.5"/>
+        <circle cx="520" cy="30" r="3.5"/><circle cx="560" cy="26" r="3.5"/><circle cx="660" cy="22" r="3.5"/>
+        <circle cx="500" cy="26" r="3.5"/><circle cx="470" cy="28" r="3.5"/><circle cx="490" cy="40" r="3.5"/>
+        <circle cx="505" cy="66" r="3.5"/><circle cx="540" cy="62" r="3.5"/><circle cx="470" cy="58" r="3.5"/>
+        <circle cx="100" cy="28" r="3.5"/><circle cx="150" cy="34" r="3.5"/><circle cx="120" cy="44" r="3.5"/>
+        <circle cx="240" cy="66" r="3.5"/><circle cx="255" cy="60" r="3.5"/>
+        <circle cx="700" cy="30" r="3.5"/><circle cx="740" cy="26" r="3.5"/><circle cx="800" cy="30" r="3.5"/>
+        <circle cx="720" cy="40" r="3.5"/><circle cx="760" cy="44" r="3.5"/><circle cx="860" cy="70" r="3.5"/>
+        <circle cx="640" cy="46" r="3.5"/><circle cx="560" cy="58" r="3.5"/><circle cx="880" cy="26" r="3.5"/>
+        <circle cx="60" cy="36" r="3.5"/><circle cx="180" cy="20" r="3.5"/>
+      </g>
+      <g font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="bold" fill="#333">
+        <text x="548" y="62">HORMUZ</text>
+        <text x="505" y="18">KYIV</text>
+        <text x="624" y="36">RIYADH</text>
+        <text x="690" y="18">BEIJING</text>
+        <text x="88" y="16">WASHINGTON</text>
+      </g>
+    </svg>
+  </div>
+
+  <section class="lead1">
+    <div class="kicker">GULF &middot; LEAD STORY</div>
+    <h2>TWO TANKERS HIT MINES IN THE STRAIT OF HORMUZ</h2>
+    <div class="dek">Iran says the tankers struck naval mines, exploded and caught fire &mdash; and shipping will not return to normal until its demands are met.</div>
+  </section>
+
+  <section class="leads23">
+    <article>
+      <div class="kicker">SAUDI ARABIA</div>
+      <h3>HOUTHIS HIT SAUDI REFINERY AND RIYADH TOWER</h3>
+      <div class="dek">Ras Tanura refinery claimed hit; coalition says four drones downed. A Riyadh skyscraper strike injured 11.</div>
+    </article>
+    <article>
+      <div class="kicker">MARKETS</div>
+      <h3>MARKETS TUMBLE AS DOW TOPS 50,000</h3>
+      <div class="dek">Kospi &minus;6.16%, Nikkei &minus;2.78%; Nasdaq &minus;1.5% &mdash; but the Dow closed at 50,018, a first.</div>
+    </article>
+  </section>
+
+  <section class="second">
+    <article>
+      <div class="kicker">WASHINGTON</div>
+      <h4>US TO RAISE TARIFFS ON 14+ PARTNERS</h4>
+      <div class="dek">20&ndash;40% duties eyed after a subsidies probe; China and the EU among 16 economies.</div>
+    </article>
+    <article>
+      <div class="kicker">UKRAINE WAR</div>
+      <h4>UKRAINE HITS TWO ROSNEFT REFINERIES</h4>
+      <div class="dek">Syzran and Kuibyshev ablaze overnight; Putin vows retaliation is inevitable.</div>
+    </article>
+    <article>
+      <div class="kicker">LIBYA</div>
+      <h4>LIBYA VOWS REVENGE FOR BENGHAZI STRIKE</h4>
+      <div class="dek">Two Libyan officers died in Ukraine&rsquo;s sea-drone hit on the corvette Merkury.</div>
+    </article>
+    <article>
+      <div class="kicker">SPACE</div>
+      <h4>SHENZHOU-24 DOCKS AT TIANGONG</h4>
+      <div class="dek">Pakistan&rsquo;s Zeeshan Ali is the first foreign astronaut on China&rsquo;s station.</div>
+    </article>
+    <article class="full">
+      <div class="kicker">PACIFIC</div>
+      <h4>AUSTRALIA&ndash;SOLOMONS PACT BARS FOREIGN BASE &mdash; Honiara lets its 2022 China security pact lapse when it expires.</h4>
+    </article>
+  </section>
+
+  <section class="tiles">
+    <div class="tile"><div class="tag">UKRAINE</div><h5>RUSSIA HITS UKRAINE POWER GRID</h5><div class="dek">Energy and gas sites damaged; DTEK plant halted.</div></div>
+    <div class="tile"><div class="tag">UKRAINE</div><h5>ODESA STRIKE KILLS TWO, WOUNDS CHILD</h5><div class="dek">Kyiv apartment block fire injures two more.</div></div>
+    <div class="tile"><div class="tag">UKRAINE</div><h5>490,334 RUSSIAN DEAD, BBC FINDS</h5><div class="dek">Leaked records counted 11m death files.</div></div>
+    <div class="tile"><div class="tag">EUROPE</div><h5>MERZ: RUSSIA &lsquo;ESCALATING&rsquo; THREATS</h5><div class="dek">Berlin defends defence spending, Kyiv aid.</div></div>
+    <div class="tile"><div class="tag">EUROPE</div><h5>POLAND WANTS PERMANENT US BASE</h5><div class="dek">After two airspace incursions in four days.</div></div>
+    <div class="tile"><div class="tag">EUROPE</div><h5>PUIGDEMONT TO RETURN TO SPAIN DEC 12</h5><div class="dek">Exile ends after a decade, post-election.</div></div>
+    <div class="tile"><div class="tag">MIDDLE EAST</div><h5>IRAN SHRUGS OFF US NAVAL BLOCKADE</h5><div class="dek">Army says it downed two US drones near Hormuz.</div></div>
+    <div class="tile"><div class="tag">MIDDLE EAST</div><h5>ISRAEL KILLS HAMAS SECURITY CHIEF</h5><div class="dek">Abuelouf, wife and two children die in Gaza.</div></div>
+    <div class="tile"><div class="tag">MIDDLE EAST</div><h5>WHO: LIFT US FUEL BLOCKADE ON CUBA</h5><div class="dek">Tedros warns children&rsquo;s lives are at risk.</div></div>
+    <div class="tile"><div class="tag">MIDDLE EAST</div><h5>HOUTHIS THREATEN JEDDAH, RED SEA PORTS</h5><div class="dek">Yemen forces say Aden, 60 km off, will hold.</div></div>
+    <div class="tile"><div class="tag">MIDDLE EAST</div><h5>LEBANON TO OPEN SECOND AIRPORT</h5><div class="dek">New northern hub as Hezbollah&rsquo;s sway fades.</div></div>
+    <div class="tile"><div class="tag">AFRICA</div><h5>SUDAN DRONE STRIKES KILL 19 CIVILIANS</h5><div class="dek">RSF hits Damazin and Roseires in Blue Nile.</div></div>
+    <div class="tile"><div class="tag">AFRICA</div><h5>SAUDI NATIONAL KIDNAPPED IN NIGER</h5><div class="dek">Suspected IS militants seized him at weekend.</div></div>
+    <div class="tile"><div class="tag">AFRICA</div><h5>NIGERIA SEIZES $227M OF METH</h5><div class="dek">Five Mexicans arrested in record bust.</div></div>
+    <div class="tile"><div class="tag">N. AMERICA</div><h5>VANCE: HUANG NEEDS NO PARDON</h5><div class="dek">No sign China directed alleged Nvidia affair.</div></div>
+    <div class="tile"><div class="tag">N. AMERICA</div><h5>SULLIVAN CONCEDES ALASKA TO PELTOLA</h5><div class="dek">Democrat wins by 4+ points, a week on.</div></div>
+    <div class="tile"><div class="tag">N. AMERICA</div><h5>ABREGO GARCIA LEAVES US FOR SPAIN</h5><div class="dek">&lsquo;I am leaving happy&hellip; with my freedom.&rsquo;</div></div>
+    <div class="tile"><div class="tag">N. AMERICA</div><h5>ARMY DETONATES 5 TONS OF LEAD AZIDE</h5><div class="dek">Controlled Iowa blast; no airborne lead found.</div></div>
+    <div class="tile"><div class="tag">N. AMERICA</div><h5>CIA AND ODNI HIT BY CYBER BREACH</h5><div class="dek">Unclassified systems compromised, source says.</div></div>
+    <div class="tile"><div class="tag">N. AMERICA</div><h5>HUAWEI GUILTY ON 10 OF 12 COUNTS</h5><div class="dek">Fraud and sanctions; sentencing Sep 2027.</div></div>
+    <div class="tile"><div class="tag">ASIA</div><h5>BANGLADESH RAISES GARMENT WAGE 36%</h5><div class="dek">Minimum pay rises after street protests.</div></div>
+    <div class="tile"><div class="tag">LATIN AMERICA</div><h5>COLOMBIA FREES SUPERMARKET HOSTAGES</h5><div class="dek">Some 20 freed in Cartagena; one captor killed.</div></div>
+    <div class="tile"><div class="tag">MARKETS</div><h5>DELL POSTS RECORD $54.9BN QUARTER</h5><div class="dek">AI server revenue up 291% to $22.0bn.</div></div>
+    <div class="tile"><div class="tag">MARKETS</div><h5>FCC CLEARS SPACEX&rsquo;S 1M SATELLITES</h5><div class="dek">Orbital data centres approved for launch.</div></div>
+    <div class="tile"><div class="tag">CULTURE</div><h5>DURAN DURAN&rsquo;S ANDY TAYLOR DIES AT 65</h5><div class="dek">Guitarist lost to illness, band confirms.</div></div>
+    <div class="tile"><div class="tag">SCIENCE</div><h5>ROCHE DRUG WINS FDA APPROVAL</h5><div class="dek">Wilserdly: first new hormone therapy in 20 years.</div></div>
+    <div class="tile"><div class="tag">CULTURE</div><h5>POPE LAMENTS COP31 FAILURE</h5><div class="dek">Leo XIV: climate talks ended with no pact.</div></div>
+  </section>
+
+  <footer>
+    <span>Sources: Reuters, AP, BBC, NYT &mdash; stories verified 26 November 2026.</span>
+    <span>THE WORLD TODAY &middot; WEDNESDAY, 25 NOVEMBER 2026</span>
+  </footer>
+
+</div>
+</body>
+</html>
